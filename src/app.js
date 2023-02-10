@@ -25,13 +25,20 @@ let random_suit = () => {
 };
 
 let random_number = () => {
-  let number = ["2", "3", "4", "5", "6", "7", "8", "9", "10"];
+  let number = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
   let random_number = Math.floor(Math.random() * number.length);
   return number[random_number];
 };
 
 let random_top_suit = random_suit();
 
+const refreshButton = document.querySelector(".refresh-button");
+
+const refreshPage = () => {
+  location.reload();
+};
+
+refreshButton.addEventListener("click", refreshPage);
 //'Create the html elemet' '<h1></h1>'
 
 //apply the suit to indexhtml

@@ -5,7 +5,7 @@ body {
 
 .card {
   background-color: white;
-  margin: auto;
+  margin-top: 40px;
   display: inline-block;
   height: 500px;
   width: 300px;
@@ -35,6 +35,15 @@ body {
   bottom: 0;
   right: 0;
   font-size: 50px;
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+.refresh-button {
+  text-align: center;
 }
 
 .spades {
