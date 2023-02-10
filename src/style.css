@@ -16,23 +16,38 @@ body {
 
 .top-suit {
   position: absolute;
-  top: 0;
+  top: -10;
   left: 0;
-  font-size: 180%;
+  font-size: 60px;
 }
 
 .number {
   position: absolute;
   top: 40%;
+  left: 45%;
+  margin: auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 60px;
 }
 
 .bottom-suit {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 180%;
+  font-size: 50px;
 }
 
-spades.card
+.spades {
+  content: "\2660";
+}
+.hearts {
+  content: "\2665";
+  color: red;
+}
+.diamonds {
+  content: "\2666";
+  color: red;
+}
+.clubs {
+  content: "\2663";
+}

@@ -7,24 +7,31 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  document.querySelector(".card").innerHTM = random_suit();
-  document.querySelector(".card").innerHTML = random_number();
+  document.querySelector(".top-suit").innerHTML = random_top_suit;
+  document.querySelector(".bottom-suit").innerHTML = random_top_suit;
+  document.querySelector(".number").innerHTML = random_number();
+  console.log(random_number());
+  console.log(random_suit());
+  if (random_top_suit == "♥" || random_top_suit == "♦") {
+    document.querySelector(".container-fluid").style.color = "red";
+  }
 };
 
-//Suits and Values = Array
+//Suits and Values = Array //randomly get one suit and value
 let random_suit = () => {
   let suit = ["♠", "♥", "♣", "♦"];
-  let random_suit = suit[Math.floor(Math.random() * suit.length)];
+  let random_suit = Math.floor(Math.random() * suit.length);
   return suit[random_suit];
 };
 
 let random_number = () => {
   let number = ["2", "3", "4", "5", "6", "7", "8", "9", "10"];
-  let random_number = number[Math.floor(Math.random() * number.length)];
+  let random_number = Math.floor(Math.random() * number.length);
   return number[random_number];
 };
-//randomly get one suit and value
 
-//'Create the html elemet' '<h1></h1>'p
+let random_top_suit = random_suit();
 
-//appl the suit to indexhtml
+//'Create the html elemet' '<h1></h1>'
+
+//apply the suit to indexhtml
